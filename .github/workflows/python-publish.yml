@@ -33,7 +33,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install poetry --user
         poetry install
-    - name: Run UnitTests:
+    - name: Run UnitTests
       run: |
         poetry run python -m unittest ./test/unit_test.py
     - name: Build package
